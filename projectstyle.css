@@ -1,0 +1,79 @@
+.projects {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.projects-content {
+    display: grid; /* Enable Grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Add spacing between items */
+}
+
+.box {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.box img {
+    width: 100%;
+    display: block; 
+    border-radius: 10px;
+}
+
+.box h6 {
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.box h4 {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+
+
+
+.layer {
+    background: rgba(255, 149, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Hidden by default */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease; /* Smooth transition */
+    border-radius: 10px; /* Match the rounded corners */
+}
+
+.layer h3 {
+    color: #fff; /* Text color */
+    font-size: 24px;
+}
+
+.projects-col:hover .layer {
+    opacity: 1; /* Make the overlay visible on hover */
+}
+.projects-row {
+    display: flex;
+    justify-content: center; /* Center-aligns projects */
+    flex-wrap: wrap; /* Ensures items wrap neatly */
+    gap: 0; /* Remove any spacing between elements */
+}
+
+
+
